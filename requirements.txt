@@ -3,4 +3,5 @@ aiocryptopay
 apscheduler
 pytz
 datetime
+colorama
 db-sqlite3
