@@ -5,7 +5,7 @@ from aiogram.types import InlineKeyboardButton, KeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from captcha_element import captcha_dict
 from config import *
-from loader import db
+import loader
 
 def shuffle_dict(d):
     keys = list(d.keys())
@@ -229,3 +229,4 @@ def kb_urls():
 
     ])
     return bilder.as_markup()
+
