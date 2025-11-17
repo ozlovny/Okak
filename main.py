@@ -7,14 +7,14 @@ from aiogram.filters import CommandStart, CommandObject
 from aiogram.utils.markdown import hlink
 
 import asyncio
-from keybords import *
-from func import *
-from config import *
-from States import *
+import keybords
+import func
+import config
+import States
 import pytz
 from datetime import datetime, timedelta
 import datetime as dt
-from middleware import *
+import middleware
 
 admin.message.filter(IsAdmin())
 
@@ -802,4 +802,5 @@ async def main():
 if __name__ == '__main__':
 
     asyncio.run(main())
+
 
