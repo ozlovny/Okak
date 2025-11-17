@@ -5,7 +5,7 @@ from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
-from config import *
+import config
 from database import DataBase
 from aiogram.client.default import DefaultBotProperties
 from aiocryptopay import AioCryptoPay, Networks
@@ -20,4 +20,5 @@ crypto = AioCryptoPay(token=api_cryptobot, network=Networks.MAIN_NET)
 scheduler = AsyncIOScheduler()
 admin = Router()
 lock = asyncio.Lock()
+
 
