@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import colorama as colorama
 from aiogram import Bot, Dispatcher, Router
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
@@ -21,3 +20,4 @@ crypto = AioCryptoPay(token=api_cryptobot, network=Networks.MAIN_NET)
 scheduler = AsyncIOScheduler()
 admin = Router()
 lock = asyncio.Lock()
+
