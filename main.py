@@ -6,7 +6,6 @@ from aiogram import F
 from aiogram.filters import CommandStart, CommandObject
 from aiogram.utils.markdown import hlink
 
-from Okak import dp, db, bot, admin, lock
 import asyncio
 from keybords import *
 from func import *
@@ -803,3 +802,4 @@ async def main():
 if __name__ == '__main__':
 
     asyncio.run(main())
+
